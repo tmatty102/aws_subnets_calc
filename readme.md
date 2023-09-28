@@ -12,7 +12,7 @@ This Python script calculates subnet CIDRs based on a given IPv4 supernet, AWS r
 1. Assume role to AWS
 2. Run the following scrip
 ```bash
-python subnet_calculator.py <supernet> <region> <num_azs> <subnet_cidr_size>
+python aws_subnet_cal.py <supernet> <region> <num_azs> <subnet_cidr_size>
 ```
 
 - `<supernet>`: IPv4 supernet in CIDR format (e.g., 10.0.0.0/24).
@@ -25,13 +25,13 @@ python subnet_calculator.py <supernet> <region> <num_azs> <subnet_cidr_size>
 ### Test Case 1
 
 ```bash
-python subnet_calculator.py 10.118.0.0/24 us-east-1 3 26
+python aws_subnet_cal.py 10.118.0.0/24 us-east-1 3 26
 ```
 
 ### Test Case 2
 
 ```bash
-python subnet_calculator.py 10.216.0.0/21 us-west-2 4 24
+python aws_subnet_cal.py 10.216.0.0/21 us-west-2 4 24
 ```
 
 ## Output
